@@ -1,10 +1,7 @@
 from fastapi import FastAPI, Request
-from dotenv import load_dotenv
 
 from handlers import send_chucknorris, send_quote, send_random_fact
 from utils import parse_request_json
-
-load_dotenv()
 
 # Initializing FastAPI application
 app = FastAPI()
